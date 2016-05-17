@@ -1,0 +1,1113 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES ... CUSTOM STYLES ... CUSTOM STYLES */
+
+html {
+  height: 100%;
+}
+
+body {
+	color: black;
+	font-size: 100%;
+	line-height: 1.5em;
+	font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+.background-contact {
+	color: white;
+	background: #151515;
+}
+
+/* GRID ... GRID ... GRID */
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row100 {
+	max-width: 100%;
+	text-align: center;
+}
+
+.row75 {
+  max-width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY ... TYPOGRAPHY ... TYPOGRAPHY */
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size:2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	line-height: 1.5em;
+}
+
+/* LINKS ... LINKS ... LINKS */
+
+a {
+	text-decoration: none;
+}
+
+/* BUTTONS ... BUTTONS ... BUTTONS */
+
+.back-to-top {
+	width: 0;
+	height: 0;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+
+	border-bottom: 1em solid black;
+
+	position: fixed;
+  padding: 2em;
+  right: 5%;
+  top: 200%;
+  transform: translateX(-5%);
+}
+
+/* NAVIGATION ... NAVIGATION ... NAVIGATION */
+
+.home-nav,
+.primary-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.home-nav a,
+.primary-nav a {
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-right: .1em solid rgba(0, 0, 0, .1);
+	opacity: .8;
+	padding: 1.2% 1em;
+	height: 100%;
+	width: 10%;
+}
+
+.home-nav a:first-child,
+.home-nav a:last-child,
+.home-nav a:nth-child(5),
+.primary-nav a:first-child,
+.primary-nav a:last-child,
+.primary-nav a:nth-child(5) {
+	border-right: 0;
+}
+
+.home-nav a:hover {
+	opacity: 1;
+}
+
+.primary-nav {
+	background: white;
+	position: fixed;
+	top: 0;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+.home-btn {
+	margin-right: auto;
+}
+
+.home-btn img {
+	width: 1em;
+}
+
+.book-btn {
+	margin-left: auto;
+	background: orange;
+	height: 100%;
+	letter-spacing: .1em;
+}
+
+a.book-btn {
+	font-weight: 100;
+}
+
+#active {
+	background: orange;
+	border-right: 0;
+	color: white;
+}
+
+/* PRIMARY HEADER ... PRIMARY HEADER ... PRIMARY HEADER */
+
+header {
+  height: 92%;
+  color: white;
+  background-image: url('../images/header.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header h1,
+footer h1 {
+  display: inline-block;
+  border-top: 1px solid white;
+	border-bottom: 1px solid white;
+  font-weight: 100;
+  text-transform: uppercase;
+	margin-top: 10%;
+	letter-spacing: .1em;
+}
+
+header a {
+  color: white;
+}
+
+span {
+	font-weight: 700;
+	padding: 0 .5em 0 0;
+}
+
+.tagline {
+	font-weight: 400;
+  margin-top: 1em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	word-spacing: .3em;
+}
+
+/* HERO ... HERO ... HERO */
+
+.hero,
+.sub-hero {
+	margin-top: 8em;
+}
+
+.hero h2,
+.hero p,
+.sub-hero h3,
+.sub-hero p {
+	margin: 1em 0;
+	padding: 0 20%;
+}
+
+.hero h2,
+.sub-hero h3 {
+	text-transform: uppercase;
+}
+
+.hero p,
+.sub-hero p {
+  color: #A9A9A9;
+}
+
+.hero-contact {
+	color: white;
+}
+
+/* Jump links and viewport positioning */
+
+.sub-hero:before {
+	display: block;
+    content: "";
+    height: 4em;
+    margin: -4em 0 0;
+}
+
+/* LEAD ... LEAD ... LEAD */
+
+.lead,
+.sub-lead-standard,
+.sub-lead-deluxe,
+.sub-lead-suite,
+.sub-lead-family,
+.sub-lead-nabry,
+.sub-lead-dolty,
+.sub-lead-felucca,
+.sub-lead-swimming,
+.sub-lead-health-club,
+.sub-lead-events {
+  margin-top: 2em;
+	margin-bottom: .2em;
+	height: 75%;
+}
+
+.lead-rooms {
+	background-image: url('../images/lead-rooms.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.lead-foodrinks {
+	background-image: url('../images/lead-foodrinks.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.lead-activities {
+	background-image: url('../images/lead-activities.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.lead-explore {
+	margin-bottom: 1em;
+	background-image: url('../images/lead-explore.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.lead-contact {
+	background-image: url('../images/lead-contact.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.sub-lead-standard {
+	background-image: url('../images/sub-lead-standard.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-deluxe {
+	background-image: url('../images/sub-lead-deluxe.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-suite {
+	background-image: url('../images/sub-lead-suite.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-family {
+	background-image: url('../images/sub-lead-family.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-nabry {
+	background-image: url('../images/sub-lead-nabry.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-dolty {
+	background-image: url('../images/sub-lead-dolty.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-felucca {
+	background-image: url('../images/sub-lead-felucca.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-swimming {
+	background-image: url('../images/sub-lead-swimming.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-health-club {
+	background-image: url('../images/sub-lead-health-club.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub-lead-events {
+	background-image: url('../images/sub-lead-events.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* TEASERS ... TEASERS ... TEASERS */
+
+.teasers,
+.sub-teasers {
+  display: flex;
+}
+
+.teasers {
+	height: 25%;
+}
+
+.standard,
+.deluxe,
+.family,
+.suite {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em .5em;
+	color: white;
+	text-decoration: none;
+}
+
+.nabry,
+.dolty,
+.felucca {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em .5em;
+	color: white;
+	text-decoration: none;
+}
+
+.swimming,
+.health-club {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em .5em;
+	color: white;
+	text-decoration: none;
+}
+
+.standard {
+	background: url("../images/standard.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.deluxe {
+	background: url("../images/deluxe.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.family {
+	background: url("../images/suite.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.suite {
+	background: url("../images/family.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nabry {
+	background: url("../images/nabry.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dolty {
+	background: url("../images/dolty.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.felucca {
+	background: url("../images/felucca.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swimming {
+	background: url("../images/swimming.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.health-club {
+	background: url("../images/health-club.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* SUB-TEASERS ... SUB-TEASERS ... SUB-TEASERS */
+
+.sub-teasers h4 {
+	color: white;
+}
+
+.standard1, .standard2, .standard3,
+.deluxe1, .deluxe2, .deluxe3,
+.suite1, .suite2, .suite3,
+.family1, .family2, .family3,
+.nabry1, .nabry2, .nabry3,
+.dolty1, .dolty2, .dolty3,
+.felucca1, .felucca2, .felucca3,
+.swimming1, .swimming2, .swimming3,
+.health-club1, .health-club2, .health-club3,
+.events1, .events2, .events3,
+.explore1, .explore2, .explore3, .explore4, .explore5, .explore6, .explore7, .explore8, .explore9 {
+	position: relative;
+	width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	text-decoration: none;
+	margin-right: .2em;
+}
+
+.explore1, .explore2, .explore3, .explore4, .explore5, .explore6, .explore7, .explore8, .explore9 {
+	margin-bottom: .2em;
+}
+
+.standard3,
+.deluxe3,
+.suite3,
+.family3,
+.nabry3,
+.dolty3,
+.felucca3,
+.swimming3,
+.health-club3,
+.events3,
+.explore3,
+.explore6,
+.explore9 {
+	margin-right: 0;
+}
+
+.standard1:before, .standard2:before, .standard3:before,
+.deluxe1:before, .deluxe2:before, .deluxe3:before,
+.suite1:before, .suite2:before, .suite3:before,
+.family1:before, .family2:before, .family3:before,
+.nabry1:before, .nabry2:before, .nabry3:before,
+.dolty1:before, .dolty2:before, .dolty3:before,
+.felucca1:before, .felucca2:before, .felucca3:before,
+.swimming1:before, .swimming2:before, .swimming3:before,
+.health-club1:before, .health-club2:before, .health-club3:before,
+.events1:before, .events2:before, .events3:before,
+.explore1:before, .explore2:before, .explore3:before, .explore4:before, .explore5:before, .explore6:before, .explore7:before, .explore8:before, .explore9:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.contact1,
+.contact2,
+.contact3,
+.contact4,
+.contact5,
+.contact6 {
+	position: relative;
+	width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	text-decoration: none;
+	margin-right: .2em;
+	color: white;
+}
+
+.contact1:before,
+.contact2:before,
+.contact3:before,
+.contact4:before,
+.contact5:before,
+.contact6:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.standard1 {
+	background: url("../images/standard1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.standard2 {
+	background: url("../images/standard2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.standard3 {
+	background: url("../images/standard3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.deluxe1 {
+	background: url("../images/deluxe1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.deluxe2 {
+	background: url("../images/deluxe2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.deluxe3 {
+	background: url("../images/deluxe3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.suite1 {
+	background: url("../images/suite1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.suite2 {
+	background: url("../images/suite2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.suite3 {
+	background: url("../images/suite3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.family1 {
+	background: url("../images/family1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.family2 {
+	background: url("../images/family2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.family3 {
+	background: url("../images/family3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nabry1 {
+	background: url("../images/nabry1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nabry2 {
+	background: url("../images/nabry2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nabry3 {
+	background: url("../images/nabry3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dolty1 {
+	background: url("../images/dolty1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dolty2 {
+	background: url("../images/dolty2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dolty3 {
+	background: url("../images/dolty3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.felucca1 {
+	background: url("../images/felucca1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.felucca2 {
+	background: url("../images/felucca2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.felucca3 {
+	background: url("../images/felucca3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swimming1 {
+	background: url("../images/swimming1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swimming2 {
+	background: url("../images/swimming2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swimming3 {
+	background: url("../images/swimming3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.health-club1 {
+	background: url("../images/health-club1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.health-club2 {
+	background: url("../images/health-club2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.health-club3 {
+	background: url("../images/health-club3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.events1 {
+	background: url("../images/events1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.events2 {
+	background: url("../images/events2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.events3 {
+	background: url("../images/events3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore1 {
+	background: url("../images/explore1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore2 {
+	background: url("../images/explore2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore3 {
+	background: url("../images/explore3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore4 {
+	background: url("../images/explore4.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore5 {
+	background: url("../images/explore5.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore6 {
+	background: url("../images/explore6.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore7 {
+	background: url("../images/explore7.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore8 {
+	background: url("../images/explore8.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.explore9 {
+	background: url("../images/explore9.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact1 {
+	background: url("../images/contact1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact2 {
+	background: url("../images/contact2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact3 {
+	background: url("../images/contact3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact4 {
+	background: url("../images/contact4.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.contact5 {
+	background: white;
+	color: black;
+}
+
+.contact6 {
+	background: url("../images/contact6.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact-span {
+	font-size: 2.2em;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.contact4 h4 {
+	font-size: 2.2em;
+}
+
+.contact-form {
+	width: 75%;
+	color: white;
+	margin: 2em auto;
+	display: block;
+}
+
+input,
+textarea {
+	border: 1px solid black;
+	display: block;
+	padding: .4em;
+	width: 75%;
+	margin: 1em auto;
+	font-size: 1em;
+}
+
+input:focus,
+textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+textarea {
+	height: 10em;
+	resize: none;
+	overflow: auto;
+	font-size: 1.5em;
+}
+
+.send-btn {
+	cursor: pointer;
+	border: 1px solid white;
+	padding: .5em .5em;
+	letter-spacing: .1em;
+	background: #151515;
+	margin-top: .5em;
+	width: 30%;
+	color: white;
+}
+
+.send-btn:hover {
+	background: white;
+	color: black;
+}
+
+/* Flip EFFECT ... Flip EFFECT ... Flip EFFECT */
+
+.flip-container {
+	perspective: 1000;
+}
+
+.flipper:hover, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d;
+	text-align: center;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	color: black;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+/* FOOTER ... FOOTER ... FOOTER */
+
+footer {
+	background: #151515;
+	color: white;
+	padding: 2em;
+	margin-top: 2em;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer h1 {
+	font-size: 1em;
+	margin-top: 0;
+}
+span {
+	font-weight: 700;
+	letter-spacing: .4em;
+	margin-right: -.4em;
+}
+
+footer .logo {
+  width: 1em;
+	padding: 0;
+}
+
+footer .tagline {
+	font-size: .8em;
+}
+
+footer nav {
+	margin: .5em;
+}
+
+footer nav img {
+	height: 29px;
+	margin: 0 .5em;
+}
+
+.contact-icon,
+.about-icon {
+	display: inline-block;
+	cursor: pointer;
+	letter-spacing: .1em;
+	background: black;
+	font-weight: 300;
+	color: white;
+	padding: .2em 1.4em;
+}
+
+.footer-contact {
+	background: white;
+	color: black;
+}
+
+.footer-contact a {
+	color: black;
+	text-decoration: none;
+}
+
+.footer-contact .contact-icon,
+.footer-contact .about-icon {
+	color: black;
+	background: orange;
+}
+
+.footer-contact h1 {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/*
+@media screen and (max-width: 600px)
+
+img, video, canvas {
+  max-width: 100%;
+}
+
+*/
